@@ -1,0 +1,44 @@
+.headerContainer {
+  background-color: #002357;
+  padding: 15px 7%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  .buttonContainer {
+
+  }
+
+  .loginButton {
+    border:2px solid #FFD802;
+    color: #FFD802;
+    font-family: Montserrat-SemiBold;
+
+    &:hover {
+      background-color: #FFD802;
+      color: #002357;
+    }
+  }
+
+  .registrationButton {
+    border:2px solid #D5FB00;
+    color: #D5FB00;
+    font-family: Montserrat-SemiBold;
+
+    &:hover {
+      background-color: #D5FB00;
+      color: #002357;
+    }
+  }
+
+  .logoutButton {
+    border: 2px solid #02C9AF;
+    color: #02C9AF;
+    font-family: Montserrat-SemiBold;
+
+    &:hover {
+      background-color: #02C9AF;
+      color: #002357;
+    }
+  }
+}
