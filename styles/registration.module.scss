@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}

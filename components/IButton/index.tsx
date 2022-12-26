@@ -1,7 +1,7 @@
-import {Button} from "@mui/material";
-import {IButtonType} from "./types";
+import { Button } from "@mui/material";
+import { IButtonType } from "./types";
 
-const IButton = ({title, className, onClick}: IButtonType) => {
+const IButton = ({ title, className, onClick }: IButtonType) => {
   return (
     <Button
       variant={'outlined'}

@@ -26,7 +26,9 @@ const Layout = ({children}: LayoutType) => {
           <IButton title={'Logout'} className={style.logoutButton} onClick={()=>{}}/>
         </div>
       </header>
-      {children}
+      <main className={style.mainContainer}>
+        {children}
+      </main>
     </div>
   )
 }
