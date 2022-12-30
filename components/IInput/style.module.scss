@@ -1,3 +1,33 @@
 .inputContainer {
   margin: 7px 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+
+  div {
+    margin-left: 10px;
+    color: #FD292F;
+    font-size: 14px;
+  }
+}
+
+.errorIcon {
+  color: #FD292F;
+  margin-left: 10px;
+  font-size: 26px;
+}
+
+.successIcon {
+  color: #089400;
+  margin-left: 10px;
+  font-size: 26px;
 }

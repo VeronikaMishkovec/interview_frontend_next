@@ -7,4 +7,23 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
+
+  .input {
+    //max-width: 350px;
+  }
+
+  .label {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 30px;
+  }
+
+  .registrationButton {
+    background-color: #002357;
+    color: #ffffff;
+    width: 250px;
+    margin-top: 50px;
+    align-self: center;
+  }
 }

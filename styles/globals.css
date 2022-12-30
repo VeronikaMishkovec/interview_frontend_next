@@ -2,9 +2,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Montserrat-Regular, sans-serif;
+  font-family: -apple-system, Montserrat-Regular, sans-serif !important;
 }
 
 a {
   text-decoration: none;
+}
+
+.MuiTypography-root {
+  font-family: -apple-system, Montserrat-Regular, sans-serif;
 }
