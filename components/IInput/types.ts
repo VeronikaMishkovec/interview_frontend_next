@@ -3,7 +3,7 @@ import {ChangeEventHandler} from "react";
 export type IInputType = {
   label: string
   value: string
-  onChange(e: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>): void
+  onChange(e: any): void
 
   type?: string
   style?: string
