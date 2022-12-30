@@ -7,6 +7,9 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 
 const CssTextField = styled(TextField)({
+  '& .MuiFormControl-root': {
+    margin: '7px 0'
+  },
   '& label.Mui-focused': {
     color: '#002357',
     fontFamily: 'Montserrat-Medium, sans-serif',
