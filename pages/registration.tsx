@@ -8,6 +8,8 @@ import {FormLabel} from "@mui/material";
 import IRadioGroup from "../components/IRadioGroup";
 import {DEGREES, SPECIALISATIONS, TECHNOLOGIES} from "../constants/specialisations";
 import IButton from "../components/IButton";
+import en from '../translation/en.json'
+import ru from '../translation/ru.json'
 
 const Registration = () => {
   const [email, setEmail] = useState('')
@@ -22,7 +24,7 @@ const Registration = () => {
   return (
     <Layout>
       <div className={style.container}>
-        <div className={style.header}>Registration</div>
+        <div className={style.header}>{ru.Registration}</div>
         <IInput
           label={'Email'}
           style={style.input}
