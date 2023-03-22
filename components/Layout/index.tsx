@@ -87,7 +87,7 @@ const Layout = ({children}: LayoutType) => {
               control={<MaterialUISwitch sx={{ m: 1 }}/>}
               label={''}
               style={{ margin: 0 }}
-              onChange={e => e.currentTarget.checked ? dispatch(currentLanguage('en')) : dispatch(currentLanguage('ru'))}
+              onChange={(e:any) => e.currentTarget.checked ? dispatch(currentLanguage('en')) : dispatch(currentLanguage('ru'))}
             />
             <Typography style={{ color: '#ffffff' }}>RU</Typography>
           </div>
