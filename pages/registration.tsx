@@ -10,6 +10,8 @@ import {DEGREES, SPECIALISATIONS, TECHNOLOGIES} from "../constants/specialisatio
 import IButton from "../components/IButton";
 import en from '../translation/en.json'
 import ru from '../translation/ru.json'
+import { useAppSelector } from "../hooks";
+import { selectCurrentLanguage } from '../reducers/languagesReducer'
 
 const Registration = () => {
   const [email, setEmail] = useState('')
@@ -21,10 +23,13 @@ const Registration = () => {
   const [firstName, setFirstName] = useState('')
   const [secondName, setSecondName] = useState('')
 
+  const lang = useAppSelector(selectCurrentLanguage)
+
   return (
     <Layout>
       <div className={style.container}>
-        <div className={style.header}>{ru.Registration}</div>
+        <div className={style.header}>{en.Registration}</div>
+        {/* <div className={style.header}>{`${lang}.Registration`}</div> */}
         <IInput
           label={'Email'}
           style={style.input}

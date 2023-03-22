@@ -5,6 +5,8 @@ import Link from "next/link";
 import {ROUTES} from "../../constants/routes";
 import {styled} from "@mui/system";
 import {FormControlLabel, Switch, Typography} from "@mui/material";
+import { useAppDispatch } from "../../hooks";
+import { currentLanguage } from '../../reducers/languagesReducer'
 
 const Layout = ({children}: LayoutType) => {
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -58,6 +60,8 @@ const Layout = ({children}: LayoutType) => {
     },
   }));
 
+  const dispatch = useAppDispatch()
+
   return (
     <div>
       <header className={style.headerContainer}>
@@ -80,9 +84,10 @@ const Layout = ({children}: LayoutType) => {
           <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
             <Typography style={{ color: '#ffffff', marginLeft: 20 }}>EN</Typography>
             <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 1 }} />}
+              control={<MaterialUISwitch sx={{ m: 1 }}/>}
               label={''}
               style={{ margin: 0 }}
+              onChange={e => e.currentTarget.checked ? dispatch(currentLanguage('en')) : dispatch(currentLanguage('ru'))}
             />
             <Typography style={{ color: '#ffffff' }}>RU</Typography>
           </div>
