@@ -1,9 +1,11 @@
-import {InputAdornment, TextField, TextFieldProps} from "@mui/material";
-import {IInputType} from "./types";
-import {styled} from "@mui/system";
-import styles from './style.module.scss';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import {InputAdornment, TextField, TextFieldProps} from "@mui/material";
+import {styled} from "@mui/system";
+
+import {IInputType} from "./types";
+
+import styles from './style.module.scss';
 
 
 const CssTextField = styled(TextField)({

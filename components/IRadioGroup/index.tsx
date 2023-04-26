@@ -1,6 +1,6 @@
 import {FormControlLabel, Radio, RadioGroup} from "@mui/material";
+
 import {IRadioGropeType} from "./types";
-import {ChangeEvent, useState} from "react";
 
 const IRadioGroup = ({ radioList }: IRadioGropeType) => {
 

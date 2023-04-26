@@ -1,11 +1,13 @@
-import Layout from "../components/Layout";
-import style from "../styles/registration.module.scss";
-import ru from "../translation/ru.json";
-import IInput from "../components/IInput";
 import {useState} from "react";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+
 import IButton from "../components/IButton";
+import IInput from "../components/IInput";
+import Layout from "../components/Layout";
+import ru from "../translation/ru.json";
+
+import style from "../styles/registration.module.scss";
 
 const Login = () => {
   const [email, setEmail] = useState('')

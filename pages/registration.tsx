@@ -1,17 +1,18 @@
-import Layout from "../components/Layout";
-import IInput from "../components/IInput";
-import style from '../styles/registration.module.scss';
 import {useState} from "react";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import {FormLabel} from "@mui/material";
-import IRadioGroup from "../components/IRadioGroup";
-import {DEGREES, SPECIALISATIONS, TECHNOLOGIES} from "../constants/specialisations";
+
 import IButton from "../components/IButton";
-import en from '../translation/en.json'
-import ru from '../translation/ru.json'
+import IInput from "../components/IInput";
+import IRadioGroup from "../components/IRadioGroup";
+import Layout from "../components/Layout";
+import {DEGREES, SPECIALISATIONS, TECHNOLOGIES} from "../constants/specialisations";
 import { useAppSelector } from "../hooks";
 import { selectCurrentLanguage } from '../reducers/languagesReducer'
+import en from '../translation/en.json'
+
+import style from '../styles/registration.module.scss';
 
 const Registration = () => {
   const [email, setEmail] = useState('')

@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+
 import { IButtonType } from "./types";
 
 const IButton = ({ title, className, onClick }: IButtonType) => {

@@ -1,12 +1,15 @@
-import {LayoutType} from "./types";
-import style from './style.module.scss';
-import IButton from "../IButton";
-import Link from "next/link";
-import {ROUTES} from "../../constants/routes";
-import {styled} from "@mui/system";
 import {FormControlLabel, Switch, Typography} from "@mui/material";
+import {styled} from "@mui/system";
+import Link from "next/link";
+
+import {ROUTES} from "../../constants/routes";
 import { useAppDispatch } from "../../hooks";
 import { currentLanguage } from '../../reducers/languagesReducer'
+import IButton from "../IButton";
+
+import {LayoutType} from "./types";
+
+import style from './style.module.scss';
 
 const Layout = ({children}: LayoutType) => {
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
