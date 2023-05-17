@@ -25,5 +25,9 @@
     width: 250px;
     margin-top: 50px;
     align-self: center;
+
+    &:hover {
+      border-color: #002357
+    }
   }
 }

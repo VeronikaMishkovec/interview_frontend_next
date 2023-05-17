@@ -13,7 +13,7 @@
   .loginButton {
     border:2px solid #FFD802;
     color: #FFD802;
-    font-family: Montserrat-SemiBold;
+    font-weight: 700;
 
     &:hover {
       background-color: #FFD802;
@@ -25,7 +25,7 @@
   .registrationButton {
     border:2px solid #D5FB00;
     color: #D5FB00;
-    font-family: Montserrat-SemiBold;
+    font-weight: 700;
     margin: 0 15px;
 
     &:hover {
@@ -38,7 +38,7 @@
   .logoutButton {
     border: 2px solid #02C9AF;
     color: #02C9AF;
-    font-family: Montserrat-SemiBold;
+    font-weight: 600;
 
     &:hover {
       background-color: #02C9AF;
